@@ -108,13 +108,8 @@ async function refreshStatus() {
     best = null;
   }
 
-  if (!best) {
-    $('host').textContent = current.host || '—';
-    $('state-icon').innerHTML = '';
-    $('state').textContent = 'No media';
-    $('time').textContent = '';
-    return;
-  }
+  $('now').hidden = !best;
+  if (!best) return;
   $('host').textContent = best.host || current.host || '—';
   $('state-icon').innerHTML = best.paused ? ICON_PAUSE : ICON_PLAY;
   $('state').textContent = best.paused ? 'Paused' : 'Playing';

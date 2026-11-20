@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Speed Controller",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Change playback speed of any HTML5 video or audio. Per tab, per domain or for all tabs. No keyboard shortcuts.",
   "permissions": ["storage", "tabs", "scripting"],
   "host_permissions": ["<all_urls>"],
