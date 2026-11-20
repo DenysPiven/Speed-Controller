@@ -5,7 +5,7 @@ A Chrome extension that changes the playback speed of any HTML5 video or audio. 
 ## Features
 
 - **Three scopes.** Set the speed **for this tab**, **for this domain** or **for all tabs**. A tab setting wins over a domain setting, and a domain setting wins over the global one. Tab settings are forgotten when the tab closes; domain and global settings are saved.
-- **Fine and quick control.** `-5%`, `-1%`, `+1%`, `+5%` buttons, a field to type any value (7–1600%), and presets: 25, 50, 75, 90, 100, 110, 125, 150, 175, 200, 250 and 1600%.
+- **Fine and quick control.** `-5%`, `-1%`, `+1%`, `+5%` buttons, a field to type any value (7–1600%), and presets: 100, 125, 150, 200, 250, 300, 400, 800 and 1600%.
 - **Badge.** The toolbar icon shows the current speed of the tab, e.g. `2.00`.
 - **ON / OFF and Reset all.** Turn the extension off without losing settings, or clear every saved speed at once.
 - **Sticky speed.** Players that reset the speed on load or between videos are set back to the chosen speed.
