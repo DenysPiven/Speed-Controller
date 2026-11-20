@@ -52,7 +52,7 @@ button { cursor: pointer; }
   gap: 10px;
   padding: 18px 18px 10px;
 }
-.logo { width: 40px; height: 40px; border-radius: 8px; flex: none; }
+.logo { width: 40px; height: 40px; border-radius: 12px; flex: none; }
 .title {
   flex: 1;
   min-width: 0;
@@ -73,7 +73,7 @@ button { cursor: pointer; }
   white-space: nowrap;
   flex: none;
   border: 1.5px solid var(--navy);
-  border-radius: 4px;
+  border-radius: 10px;
   background: var(--white);
   font-weight: 600;
   font-size: 13px;
@@ -87,7 +87,7 @@ button { cursor: pointer; }
   height: 36px;
   padding: 0 6px 0 10px;
   border: 1px solid var(--border);
-  border-radius: 4px;
+  border-radius: 10px;
   background: var(--white);
   box-shadow: 0 1px 3px rgba(20, 38, 138, 0.12);
   font-weight: 600;
@@ -96,7 +96,7 @@ button { cursor: pointer; }
 .toggle-label { min-width: 26px; text-align: left; }
 .toggle-knob {
   width: 18px; height: 18px;
-  border-radius: 3px;
+  border-radius: 6px;
   background: var(--navy);
   transition: background-color 0.15s ease;
 }
@@ -146,7 +146,7 @@ body.off main, body.off .now { opacity: 0.45; pointer-events: none; }
 .step, .speed-input {
   height: 34px;
   border: 1px solid var(--border);
-  border-radius: 4px;
+  border-radius: 10px;
   background: var(--white);
   box-shadow: 0 1px 3px rgba(20, 38, 138, 0.1);
   font-weight: 600;
@@ -168,7 +168,7 @@ body.off main, body.off .now { opacity: 0.45; pointer-events: none; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 18px 18px;
-  border-radius: 4px;
+  border-radius: 12px;
   overflow: hidden;
   background: var(--line);
   gap: 1px;
