@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speed Controller</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="top">
+    <img class="logo" src="icons/icon128.png" alt="">
+    <h1 class="title">Speed<br>Controller</h1>
+    <button id="reset" class="reset" type="button">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+        <path d="M10 4 3 10.5 10 17v-4.2c5.2 0 8.6 1.6 11 5.2-1-5.2-4.1-10.2-11-11.2V4z" fill="currentColor"/>
+      </svg>
+      Reset all
+    </button>
+    <button id="toggle" class="toggle" type="button" role="switch" aria-checked="true">
+      <span class="toggle-label">ON</span><span class="toggle-knob"></span>
+    </button>
+  </header>
+
+  <main id="controls">
+    <fieldset class="scopes">
+      <legend class="sr-only">Apply speed to</legend>
+      <label class="scope"><input type="radio" name="scope" value="tab" checked><span class="dot"></span>For this tab</label>
+      <label class="scope"><input type="radio" name="scope" value="domain"><span class="dot"></span>For this domain</label>
+      <label class="scope"><input type="radio" name="scope" value="all"><span class="dot"></span>For all tabs</label>
+    </fieldset>
+
+    <div class="stepper">
+      <button class="step" type="button" data-delta="-5">-5%</button>
+      <button class="step" type="button" data-delta="-1">-1%</button>
+      <input id="speed" class="speed-input" type="text" inputmode="numeric" autocomplete="off" aria-label="Speed in percent" value="100">
+      <button class="step" type="button" data-delta="1">+1%</button>
+      <button class="step" type="button" data-delta="5">+5%</button>
+    </div>
+
+    <div class="presets" id="presets"></div>
+  </main>
+
+  <section class="now">
+    <p class="now-host"><span class="now-label">Current playing:</span> <span id="host">—</span></p>
+    <p class="now-status">
+      <span id="state-icon" class="state-icon"></span>
+      <span id="state" class="state">No media</span>
+      <span id="time" class="time"></span>
+    </p>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+</html>
